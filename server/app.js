@@ -2,6 +2,10 @@
 
 // 设置默认环境变量
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+if (process.env.NODE_ENV === 'production') {
+	MONGO_USERNAME = 'admin'
+	MONGO_PASSWORD = '123456'
+}
 const Koa = require('koa')
 const app = new Koa()
 const config = require('./config/env')
