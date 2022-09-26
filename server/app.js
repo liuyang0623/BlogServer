@@ -5,6 +5,10 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 if (process.env.NODE_ENV === 'production') {
 	process.env.MONGO_USERNAME = 'admin'
 	process.env.MONGO_PASSWORD = '123456'
+	process.env.MONGO_PORT_27017_TCP_ADDR = '172.17.45.1'
+    process.env.REDIS_PORT_6379_TCP_ADDR = '172.17.45.1'
+    process.env.REDIS_PORT_6379_TCP_PORT = '6379'
+    process.env.REDIS_PASSWORD = ''
 }
 const Koa = require('koa')
 const app = new Koa()

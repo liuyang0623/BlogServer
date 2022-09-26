@@ -82,14 +82,6 @@ var all = {
 var config = _.merge(all,require('./' + process.env.NODE_ENV + '.js') || {})
 //加载私有配置
 if (fs.existsSync(path.join(__dirname, 'private/index.js'))) {
-  if (process.env.NODE_ENV === 'production') {
-    process.env.MONGO_PORT_27017_TCP_ADDR = '172.17.45.1'
-    process.env.MONGO_USERNAME = ''
-    process.env.MONGO_PASSWORD = ''
-    process.env.REDIS_PORT_6379_TCP_ADDR = '172.17.45.1'
-    process.env.REDIS_PORT_6379_TCP_PORT = '6379'
-    process.env.REDIS_PASSWORD = ''
-  }
   config = _.merge(config, require(path.join(__dirname, 'private/index.js')) || {})  
 }
 module.exports = config
