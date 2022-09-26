@@ -4,6 +4,7 @@ var path = require('path')
 var _ = require('lodash')
 var fs = require('fs')
 
+console.log(process.env)
 var all = {
   env: process.env.NODE_ENV,
   root: path.normalize(__dirname + '/../../..'),
