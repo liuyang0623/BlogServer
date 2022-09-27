@@ -1,5 +1,5 @@
 {
-  "name": "liu yblog-api-koa",
+  "name": "liuyblog-api-koa",
   "version": "2.4.0",
   "description": "liuyblog API koa版",
   "main": "server/app.js",
