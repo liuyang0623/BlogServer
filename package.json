@@ -1,7 +1,7 @@
 {
-  "name": "jackblog-api-koa",
+  "name": "liu yblog-api-koa",
   "version": "2.4.0",
-  "description": "jackblog API koa版",
+  "description": "liuyblog API koa版",
   "main": "server/app.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon ./bin/www",
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackhutu/jackblog-api-koa.git"
+    "url": "git+https://github.com/jackhutu/liuyblog-api-koa.git"
   },
   "keywords": [
-    "jackblog"
+    "liuyblog"
   ],
-  "author": "Jack Hu",
+  "author": "liuyang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jackhutu/jackblog-api-koa/issues"
+    "url": "https://github.com/jackhutu/liuyblog-api-koa/issues"
   },
-  "homepage": "https://github.com/jackhutu/jackblog-api-koa#readme",
+  "homepage": "https://github.com/jackhutu/liuyblog-api-koa#readme",
   "bin": "./node_modules/.bin/",
   "ava": {
     "files": [
