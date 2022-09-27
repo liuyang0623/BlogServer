@@ -13,7 +13,6 @@ var all = {
   mongo: {
     options: {
       useMongoClient: true,
-      auto_reconnect: true,
       // user: process.env.MONGO_USERNAME || '',
       // pass: process.env.MONGO_PASSWORD || ''
     },
